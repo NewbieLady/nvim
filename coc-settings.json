@@ -31,36 +31,6 @@
 				"default": "\uf29c"
 		},
 		"languageserver": {	
-				// C++
-				"ccls": {
-						"command": "ccls",
-						"filetypes": ["c", "cpp", "cuda", "objc", "objcpp"],
-						"rootPatterns": [".ccls", "compile_commands.json"],
-						"initializationOptions": {
-								"cache": {
-										"directory": ".ccls-cache",
-										"format": "binary"
-								},
-								"client": {
-										"snippetSupport": true
-								},
-								"index": {
-										"onChange": true
-								},
-								"highlight": {
-										"lsRanges": true
-								}//,
-								//"clang": {
-          			//		"resourceDir": "/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0",
-          			//		"extraArgs": [
-								//				"-isystem",
-								//				"/Library/Developer/CommandLineTools/usr/include/c++/v1",
-								//				"-I",
-								//				"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/"        
-          			//		]
-        				//}	
-						}
-				},
 				"cmake": {
 						"command": "cmake-language-server",
 						"filetypes": ["cmake"],
