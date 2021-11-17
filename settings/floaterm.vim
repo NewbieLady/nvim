@@ -48,5 +48,6 @@ tnoremap <silent> 	<leader>tf 		<C-\><C-n><C-W><Left>
 " => Hotkey to run other console apps
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Git 
-nnoremap   <F8>    :FloatermNew --position=bottomleft --height=0.8 --width=0.6 --title='Git' lazygit<CR>
-
+nnoremap   <leader>g    :FloatermNew --position=bottomleft --height=0.8 --width=0.6 --title='Git' lazygit<CR>
+nnoremap <silent> 	<F8> 		:w<CR>:FloatermNew --autoclose=0 g++ % -o %< && ./%<<CR>
+nnoremap <silent> 	<C-A> 		:%y+<CR>
